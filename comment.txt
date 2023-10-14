@@ -1,0 +1,177 @@
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git commit -m "push project"
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mintty.2023-10-09_19-43-43.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git add -A
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git commit -m "Push Project"
+[main f826cd7] Push Project
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mintty.2023-10-09_19-43-43.png
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git push origin main
+To https://github.com/Surve2412Shraddha/Projects
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Surve2412Shraddha/Projects'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git pull origin main
+From https://github.com/Surve2412Shraddha/Projects
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git push origin main
+To https://github.com/Surve2412Shraddha/Projects
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Surve2412Shraddha/Projects'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git push -f origin main
+Enumerating objects: 55, done.
+Counting objects: 100% (55/55), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (55/55), 213.31 KiB | 7.90 MiB/s, done.
+Total 55 (delta 14), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (14/14), done.
+To https://github.com/Surve2412Shraddha/Projects
+ + 0d37619...f826cd7 main -> main (forced update)
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ ^C
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git add -A
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TnV5B.png
+        new file:   comment.txt
+
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git commit -m "update project"
+[main 4d07d2d] update project
+ 2 files changed, 61 insertions(+)
+ create mode 100644 TnV5B.png
+ create mode 100644 comment.txt
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 41.59 KiB | 8.32 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Surve2412Shraddha/Projects
+   f826cd7..4d07d2d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git branch
+  login
+* main
+  register
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (main)
+$ git checkout register
+Switched to branch 'register'
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git status
+On branch register
+nothing to commit, working tree clean
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git status
+On branch register
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/app/modules/register/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git add -A
+warning: in the working copy of 'src/app/modules/register/register.module.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/modules/register/register/register.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/modules/register/register/register.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/modules/register/register/register.component.ts', LF will be replaced by CRLF the next time Git touches it
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git commit -m
+error: switch `m' requires a value
+
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git commit -m "register module added"
+[register c316d73] register module added
+ 5 files changed, 47 insertions(+)
+ create mode 100644 src/app/modules/register/register.module.ts
+ create mode 100644 src/app/modules/register/register/register.component.html
+ create mode 100644 src/app/modules/register/register/register.component.scss
+ create mode 100644 src/app/modules/register/register/register.component.spec.ts
+ create mode 100644 src/app/modules/register/register/register.component.ts
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git -u origin register
+unknown option: -u
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ git push -u origin register
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.55 KiB | 793.00 KiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'register' on GitHub by visiting:
+remote:      https://github.com/Surve2412Shraddha/Projects/pull/new/register
+remote:
+To https://github.com/Surve2412Shraddha/Projects
+ * [new branch]      register -> register
+branch 'register' set up to track 'origin/register'.
+
+surve@Shraddha MINGW64 /c/shraddha/Angular/Git_Use_DemoProject (register)
+$ cd ..
+
+surve@Shraddha MINGW64 /c/shraddha/Angular
+$ cd pull/
+bash: cd: pull/: No such file or directory
+
+
